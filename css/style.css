@@ -14,16 +14,15 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: #333;
-  --link-color: #506485;
-  --link-hover-color: #4a999c;
-  --color-4: #d0d0bd;
-  --color-5: #8b6b89;
-  --color-6: #d4848f;
+  --bg-color: #506485;
+  --link-color: #4a999c;
+  --link-hover-color: #d0d0bd;
+  --color-4: #8b6b89;
+  --color-5: #d4848f;
 
   --primary-font: "Open Sans", sans-serif;
   --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
+  --main-text-color: #fff;
 
   --white-space: 1rem;
 }
@@ -33,7 +32,7 @@ use the fonts in other ways in the font hierarchy etc. */
   border: none;
   outline: none;
   color: #fff;
-  background: #333;
+  background: #4a999c;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -45,14 +44,7 @@ use the fonts in other ways in the font hierarchy etc. */
 
 .primary-button:before {
   content: "";
-  background: linear-gradient(
-    90deg,
-    #506485,
-    #4a999c,
-    #d0d0bd,
-    #8b6b89,
-    #d4848f
-  );
+  background: linear-gradient(45deg, #8b6b89, #d4848f);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -68,7 +60,7 @@ use the fonts in other ways in the font hierarchy etc. */
 }
 
 .primary-button:active {
-  color: #333;
+  color: #4a999c;
 }
 
 .primary-button:active:after {
@@ -85,7 +77,7 @@ use the fonts in other ways in the font hierarchy etc. */
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #333;
+  background: #4a999c;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -96,7 +88,7 @@ use the fonts in other ways in the font hierarchy etc. */
   border: none;
   outline: none;
   color: #fff;
-  background: #333;
+  background: #4a999c;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -108,14 +100,7 @@ use the fonts in other ways in the font hierarchy etc. */
 
 .secondary-button:before {
   content: "";
-  background: linear-gradient(
-    90deg,
-    #506485,
-    #4a999c,
-    #d0d0bd,
-    #8b6b89,
-    #d4848f
-  );
+  background: linear-gradient(45deg, #8b6b89, #d4848f);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -131,7 +116,7 @@ use the fonts in other ways in the font hierarchy etc. */
 }
 
 .secondary-button:active {
-  color: #333;
+  color: #4a999c;
 }
 
 .secondary-button:active:after {
@@ -148,7 +133,7 @@ use the fonts in other ways in the font hierarchy etc. */
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #333;
+  background: #4a999c;
   left: 0;
   top: 0;
   border-radius: 100%;
@@ -156,19 +141,14 @@ use the fonts in other ways in the font hierarchy etc. */
 
 a {
   transition: all 3s;
+  font-family: "MedievalSharp";
 }
 
 a:hover {
   font-size: 2rem;
-  background-image: linear-gradient(
-    90deg,
-    #506485,
-    #4a999c,
-    #d0d0bd,
-    #8b6b89,
-    #d4848f
-  );
+  background-image: linear-gradient(90deg, #8b6b89, #d4848f);
   background-size: 100%;
+  font-family: "MedievalSharp";
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -193,7 +173,7 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
+  background: #333;
   color: white;
   width: 100%;
 }
@@ -205,6 +185,7 @@ footer {
   padding-right: 0.75em;
   font-weight: bold;
   color: white;
+  font-family: "MedievalSharp";
 }
 
 .header-wrapper h2 {
@@ -212,19 +193,23 @@ footer {
   color: rgba(255, 255, 255, 0.95);
   font-weight: bold;
   margin: var(--white-space) 0;
+  font-family: "Bookmark";
 }
 
 .header-wrapper h3 {
   font-size: 1.2rem;
   font-style: italic;
+  font-family: "Baskerville";
 }
 
 .header-wrapper h4 {
   font-size: 0.8rem;
+  font-family: "Baskerville";
 }
 
 main {
   padding: calc(2 * var(--white-space));
+  background-color: #333;
 }
 
 section {
@@ -317,7 +302,7 @@ em {
 }
 
 a {
-  font-family: "Baskerville";
+  font-family: "MedievalSharp";
   color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
@@ -335,6 +320,8 @@ p[class*="font-details-"] {
 .adjectives ul {
   font-size: 2rem;
   opacity: 0.5;
+  font-family: "Baskerville";
+  color: #fff;
 }
 
 .adjectives ul {
